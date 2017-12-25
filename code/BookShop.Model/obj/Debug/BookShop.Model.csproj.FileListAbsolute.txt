@@ -1,0 +1,10 @@
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\bin\Debug\BookShop.Model.dll.config
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\bin\Debug\BookShop.Model.dll
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\bin\Debug\BookShop.Model.pdb
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\bin\Debug\EntityFramework.dll
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\bin\Debug\EntityFramework.xml
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\obj\Debug\BookShop.Model.csprojResolveAssemblyReference.cache
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\obj\Debug\BookShop.Model.dll
+C:\DEV\dotNet\MVC5\BookShop\BookShop.Model\obj\Debug\BookShop.Model.pdb
