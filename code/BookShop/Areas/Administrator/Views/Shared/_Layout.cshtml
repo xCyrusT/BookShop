@@ -1,4 +1,5 @@
-﻿@{ 
+﻿
+@{ 
     // Kiểm tra đăng nhập hay chưa ?
     if (Session["userid"] == null)
     {
@@ -45,6 +46,10 @@
         <!-- Scripts.Render("~/bundles/jquery") -->
         <script src="~/Areas/Administrator/Content/ckeditor/ckeditor.js"></script>
         <script src="~/Areas/Administrator/Content/ckfinder/ckfinder.js"></script>
+        <!-- PagedList -->
+        <link href="~/Content/PagedList.css" rel="stylesheet" />
+        <!-- jQuery Unobtrusive Ajax-->
+        <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
     </head>
 
     <body class="nav-md">

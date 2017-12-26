@@ -1,0 +1,25 @@
+﻿@model PagedList.IPagedList<BookShop.Model.CHUDE>
+@using PagedList.Mvc
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã chủ đề</th>
+            <th>Tên chủ đề</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaCD</td>
+                <td>@item.Tenchude</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+@Html.PagedListPager(Model,page=>Url.Action("GetPaging", new { page}), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions() { HttpMethod="GET", UpdateTargetId="chude_area"}))

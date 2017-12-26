@@ -1,5 +1,6 @@
 ﻿using BookShop.Model;
 using BookShop.Repository;
+using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -89,6 +90,14 @@ namespace BookShop.Areas.Administrator.Controllers
             }
 
             return View(cd);
+        }
+
+        public ActionResult GetPaging(int? page)
+        {
+            int pageSize = 10; // Số sản phẩm của 1 trang
+            int pageNum = (page ?? 1); // If(page==null)->set page==1
+
+            return PartialView("_GetPaging", chuDeRepo.GetAll().ToPagedList(pageNum, pageSize));
         }
     }
 }
