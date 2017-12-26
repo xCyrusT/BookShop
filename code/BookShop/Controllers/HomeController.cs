@@ -24,11 +24,6 @@ namespace BookShop.Controllers
             return View();
         }
 
-        public PartialViewResult GetChuDe()
-        {
-            return PartialView(chudeRepo.GetAll());
-        }
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -41,6 +36,12 @@ namespace BookShop.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        [ChildActionOnly]
+        public ActionResult _PartialViewChuDe()
+        {
+            return PartialView(chudeRepo.GetAll());
         }
     }
 }

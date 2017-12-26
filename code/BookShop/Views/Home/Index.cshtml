@@ -18,7 +18,7 @@
                                 <figure>
                                     <div class="snipcart-item block">
                                         <div class="snipcart-thumb">
-                                            <a href="single.html"><img title=" " alt=" " src="@item.Hinhminhhoa" /></a>
+                                            <a href="@Url.Action("Details", "Sach", new { id = item.Masach})"><img title=" " alt=" " src="@item.Hinhminhhoa" /></a>
                                             <p>@item.Tensach</p>
                                             <h4>@item.Dongia</h4>
                                         </div>
@@ -66,9 +66,9 @@
                                 <figure>
                                     <div class="snipcart-item block">
                                         <div class="snipcart-thumb">
-                                            <a href="single.html"><img title=" " alt=" " src="@item.Hinhminhhoa" /></a>
+                                            <a href="@Url.Action("Details", "Sach", new { id = item.Masach})"><img title=" " alt=" " src="@item.Hinhminhhoa" /></a>
                                             <p>@item.Tensach</p>
-                                            <h4>@item.Dongia <span>$10.00</span></h4>
+                                            <h4>@item.Dongia</h4>
                                         </div>
                                         <div class="snipcart-details top_brand_home_details">
                                             <form action="checkout.html" method="post">
