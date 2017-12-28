@@ -1,0 +1,50 @@
+﻿@using BookShop.Models;
+@{
+    ViewBag.Title = "ShoppingCart";
+}
+
+<div class="container">
+    <h2 style="color:red">Giỏ hàng của bạn</h2>
+    <br />
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Tên sách</th>
+                <th>Hình ảnh</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        @{
+            double thanhTien = 0;
+            List<CartItem> listCart = (List<CartItem>)Session["giohang"];
+        }
+        <tbody>
+            @if (listCart != null)
+            {
+                foreach (var item in listCart)
+                {
+                    <tr>
+                        <td>@item.ProductOrder.Tensach</td>
+                        <td><img src="@item.ProductOrder.Hinhminhhoa" width="40" height="60" /></td>
+                        <td><input type="number" value="@item.Quantity" class="form-control" /></td>
+                        <td>@item.ProductOrder.Dongia</td>
+                        <td>
+                            @{
+                                double tong = (double)(item.ProductOrder.Dongia) * (item.Quantity);
+                                thanhTien = thanhTien + tong;
+                            }
+                            @tong
+                        </td>
+                    </tr>
+                 }
+             }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" class="text-right">Tổng tiền thanh toán: @thanhTien</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

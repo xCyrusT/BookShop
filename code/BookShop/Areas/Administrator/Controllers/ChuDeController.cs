@@ -26,6 +26,7 @@ namespace BookShop.Areas.Administrator.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateInput(false)]
         public ActionResult Create(CHUDE cd)
         {
             try

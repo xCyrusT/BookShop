@@ -172,16 +172,19 @@
     <Compile Include="Areas\Administrator\Controllers\HomeController.cs" />
     <Compile Include="Areas\Administrator\Controllers\NhaXuatBanController.cs" />
     <Compile Include="Areas\Administrator\Controllers\SachController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SachController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -209,6 +212,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -237,6 +241,7 @@
     <Content Include="Views\Sach\Details.cshtml" />
     <Content Include="Views\Sach\Index.cshtml" />
     <Content Include="Views\Sach\Search.cshtml" />
+    <Content Include="Views\Cart\ShoppingCart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -249,8 +254,8 @@
     <Folder Include="Content\css\" />
     <Folder Include="Content\fonts\" />
     <Folder Include="Content\images\" />
+    <Folder Include="Content\jquery-ui-1.12.1.custom\" />
     <Folder Include="Content\js\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

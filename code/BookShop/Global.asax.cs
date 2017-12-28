@@ -24,6 +24,8 @@ namespace BookShop
             Session["username"] = null;
             Session["fullname"] = null;
             Session["avatar"] = null;
+
+            Session["giohang"] = null;
         }
     }
 }
